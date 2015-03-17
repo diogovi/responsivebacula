@@ -1,0 +1,12 @@
+desc_ca=Tallafocs IPFIlter
+version=1.730
+longdesc=Configure a firewall using the IPFilter package, by creating and editing rules.
+os_support=solaris {&has_command("ipf")}
+desc_de=IPFilter-Firewall 
+desc=IPFilter Firewall
+desc_nl=IPFilter Firewall
+category=net
+depends=net 1.730
+desc_de.UTF-8=IPFilter-Firewall 
+desc_ca.UTF-8=Tallafocs IPFIlter
+desc_nl.UTF-8=IPFilter Firewall

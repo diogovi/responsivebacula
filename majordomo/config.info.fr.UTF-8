@@ -1,0 +1,3 @@
+program_dir=Répertoire du programme majordomo,0
+majordomo_cf=Chemin du fichier de configuration de majordomo,0
+aliases_file=Fichier d'aliases de style Sendmail,3,Prendre de sendmail.cf

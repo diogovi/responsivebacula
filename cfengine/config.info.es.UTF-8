@@ -1,0 +1,9 @@
+start_cmd=Comando para arrancar cfd,3,Sólo ejecutar daemon
+cfrun=Trayectoria a programa cfrun,0
+cfd_conf=Trayectoria a archivo cfd.conf,3,Automática
+cfd=Trayectoria a programa cfd,0
+cfrun_hosts=Trayectoria a archivo de opciones de servidor,3,Automática
+cfengine=Trayectoria a programa cfengine,0
+stop_cmd=Comando para parar cfd,3,Sólo matar proceso
+cfengine_dir=Trayectoria a directorio de archivos de configuración,0
+cfengine_conf=Trayectoria a archivo cfengine.conf,3,Automática

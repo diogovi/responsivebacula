@@ -1,0 +1,59 @@
+<header>Monitorowanie pasma</header>
+
+Modu� ten mo�e by� u�yty do utworzenia prostych raport�w na temat u�ycia
+pasma sieciowego wed�ug port�w, hosta, protoko�u i czasu dla ruchu
+wys�anego z lub przechodz�cego przez tw�j system. Jest to u�yteczne dla
+pojedynczych host�w i bramek sieciowych (a zw�aszcza NAT).
+<p>Aby u�ywa� tego modu�u nale�y ustawi� kilka regu� firewalla i
+	wpis logu systemowego do przechwytywania ruchu wysy�anego i
+	otrzymywanego przez system. Przy ustawianiu musisz wybra� zewn�trzny
+	interfejs sieciowy, na kt�rym ruch b�dzie monitorowany. Zazwyczaj jest
+	to interfejs ppp u�ywany dla po��cze� wdzwanianych lub po��czenia ADSL
+	lub te� interfejs ethernetowy pod��czony do modemu kablowego lub
+	rutera.
+<p>Gdy przechwycona zostanie przynajmniej godzina ruchu, w�wczas
+	modu� wygeneruje raporty podsumowuj�ce ruch wed�ug jednej z
+	nast�puj�cych kategorii:
+<ul>
+	<li><strong>Godzina</strong><br> Data i czas, w kt�rym dane
+		zosta�y otrzymane.
+	<li><strong>Dzie�</strong><br> Data, kiedy dane zosta�y
+		otrzymane.
+	<li><strong>Host</strong><br> Host w sieci wewn�trznej lub
+		host firewalla, kt�ry wys�a� lub otrzyma� dane.
+	<li><strong>Port wewn�trzny</strong><br> Port hosta lub
+		firewalla wewn�trznego, do kt�rego dane zosta�y wys�ane. Ten tryb jest
+		u�yteczny do okre�lenia jak du�o ruchu jest generowane przez
+		po��czenia do ka�dego z serwer�w.
+	<li><strong>Port zewn�trzny</strong><br> Port na serwerze
+		poza sieci�, do kt�rego wys�ane zosta�y dane. Mo�e by� wykorzystany do
+		okre�lenia, z kt�rych us�ug korzystaj� u�ytkownicy twojej sieci.
+	<li><strong>Port</strong><br> Oba porty: zewn�trzny i
+		wewn�trzny. U�yteczne do por�wnania ca�ego ruchu sieciowego wed�ug
+		rodzaju us�ugi.
+</ul>
+
+Mo�esz tak�e wybra� filtr raportu wybieraj�c host, port lub protok�.
+Host mo�na wprowadzi� za pomoc� adresu IP, nazwy hosta lub adresu
+sieciowego takiego jak 192.168.1.0. Port mo�e by� wprowadzony za pomoc�
+nazwy lub liczby i odnosi si� zar�wno do TCP jak i UDP.
+<p>
+
+	Raport mo�na tak�e ograniczy� do ruchu zebranego w okre�lonych
+	godzinach za pomoc� p�l <strong>Dla ruchu po</strong> i <strong>Dla
+		ruchu przed</strong>. Poniewa� ruch jest podsumowywany wed�ug godziny, nie
+	mo�na ograniczy� raportu o okres mniejszy ni� godzina.
+<p>
+
+	Opcja <strong>Tylko porty serwerowe?</strong> jest u�yteczna podczas
+	raportowania wers�ug wchodz�cych, wychodz�cych lub wszystkich port�w.
+	Ogranicza wy�wietlanie port�w do najcz�ciej u�ywanych przez serwery
+	(tych poni�ej 1024 lub z nazwami), aby zapobiec wy�wietlaniu du�ej
+	liczby port�w, kt�re nie s� u�ywane.
+<p>
+
+	Opcja <strong>Rozwi�zywa� nazwy host�w?</strong> mo�e by� zaznaczona
+	podczas raportowania wed�ug host�w. Spowoduje, �e wszystkie adresy IP
+	b�d� rozwi�zane na nazwy host�w - je�li b�dzie to mo�liwe.
+<p>
+<hr>

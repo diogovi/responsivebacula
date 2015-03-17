@@ -1,0 +1,15 @@
+snmp_version=SNMP Protokoll Version,1,3-v3,2-v2,1-v1
+def_tmpl=Standard Template,10,-Keiner,Benanntes Template
+snmp_trap=SNMP OID f&#252;r traps,0
+pager_cmd=Befehl&#044 um Nachrichten an einen Pager zu senden,3,Keiner
+history_show=Anzahl an historischen Stati zum Anzeigen,0
+snmp_community=SNMP community string,0
+output=Nehme Ausgabe von Programmen, die ausgef&#252;hrt werden, wenn unten, auf?,1,1-Ja,0-Nein
+snmp_server=SNMP traps zum Server senden,3,None
+subject_mode=E-Mail Betreffmodus,1,0-Neuer Stil,1-Alter Stil
+history_purge=Tage&#44; um historische Stati zu behalten,0
+refresh=Sekunden zwischen Seiten-Auffrischungen,3,Nicht auffrischen
+index_status=In der Liste anzuzeigender Status,1,1-Aktueller Status,0-Vom letzten &Uuml;berwachungszeitpunkt
+columns=Spalten f&#252;r Dienste Tabelle,1,2-2,1-1
+sort_mode=Zeige Monitore sortiert nach,1,0-Erzeugter Reihenfolge,1-Beschreibung,2-Host,3-Letzten Status
+pinger=Sende Pings mit Befehl,10,-Verwende eingebauten Code,linux-Benutze Befehl f&#252;r Linux oder FreeBSD,Anderer Befehl

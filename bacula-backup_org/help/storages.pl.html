@@ -1,0 +1,45 @@
+<header>Us�ugi magazynu</header>
+
+Ka�dy wpis na tej stronie okre�la po��czenie do urz�dzenia w us�udze
+magazynu Bacula. Zazwyczaj us�uga uruchamiana jest na tym samym
+systemie, ale mo�liwe jest zdefiniowanie wi�cej ni� jednej us�ugi, kt�re
+mog� znajdowa� si� na zdalnych hostach z r�nymi rodzajami tasiemek lub
+dysk�w twardych.
+<p>
+
+	Najwa�niejsze atrybuty dla ka�dej us�ugi:<br>
+<dl>
+	<dt>Nazwa us�ugi magazynu
+	<dd>Unikalna nazwa u�ywana przez ten system do identyfikacji
+		us�ugi.
+	<dt>Has�o Bacula SD
+	<dd>
+		Pole to musi zawiera� has�o u�ywane przez us�ug� magazynu na zdalnym
+		systemie, has�o mo�na znale�� w pliku
+		<tt>/etc/bacula/bacula-sd.conf</tt>
+		.
+	<dt>Nazwa hosta lub adres IP
+	<dd>Pe�na nazwa hosta lub IP systemu z uruchomion� us�ug�
+		magazynu.
+	<dt>Nazwa urz�dzenia magazynuj�cego
+	<dd>Ka�da us�uga magazynu mo�e okre�la� jedno lub wi�cej urz�dze�,
+		z kt�rych ka�de mo�e korespondowa� z innym katalogiem na tasiemce.
+		Pole to okre�la, kt�rego urz�dzenia us�uga ma u�ywa�.
+	<dt>Nazwa rodzaju no�nika
+	<dd>
+		Pole to musi zawiera� kr�tk� nazw� rodzaju no�nika u�ywanego jako
+		urz�dzenie magazynuj�ce - np. <i>Plik</i> lub <i>DDS-2</i>. Musi by�
+		taka sama jak rodzaj no�nika w sekcji <strong>Urz�dzenia
+			magazynuj�ce</strong> na serwerze magazynuj�cym.
+</dl>
+
+Cz�sto u�ytecznym jest posiadanie wi�cej ni� jednego wpisu na tym samym
+ho�cie, kt�ry odwo�uje si� do innego urz�dzenia magazynuj�cego.
+Umo�liwia to tworzenie r�nych katalog�w lub tasiemek.
+<p>Je�li opcja TLS jest widoczna w formularzu us�ugi magazynu, mo�na
+	go u�y� do zabezpieczenia komunikacji pomi�dzy mened�erem i zdalnym
+	serwerem magazynu. Zazwyczaj nie jest to wymagane w prostej
+	konfiguracji Bacula, gdy us�ugi magazynu lub mened�era uruchomione s�
+	na tym samym systemie.
+<p>
+<footer>

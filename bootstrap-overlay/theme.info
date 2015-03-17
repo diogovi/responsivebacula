@@ -1,0 +1,6 @@
+desc=Bootstrap 3 Webmin Theme Overlay
+overlay=1
+webmin=1
+usermin=1
+overlays=bootstrap
+version=0.5.2

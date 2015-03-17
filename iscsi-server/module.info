@@ -1,0 +1,14 @@
+desc_ms_MY=Pelayan iSCSI
+version=1.730
+longdesc=Share disk devices across the network using the iSCSI protocol with the netbsd-iscsi package.
+longdesc_no=Del disk-enheter over nettverket ved hjelp av iSCSI protokollen med netbsd-iscsi pakken.
+os_support=*-linux freebsd
+desc_de=iSCSI-Server 
+desc_no=iSCSI tjener
+desc=iSCSI Server
+category=hardware
+longdesc_ms_MY=Berkongsi peranti disk di seluruh rangkaian menggunakan protokol iSCSI dengan menggunakan pakej NetBSD-iSCSI.
+depends=fdisk lvm raid init 1.730
+desc_de.UTF-8=iSCSI-Server 
+desc_ms_MY.UTF-8=Pelayan iSCSI
+desc_no.UTF-8=iSCSI tjener

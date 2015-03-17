@@ -1,0 +1,42 @@
+<header>Kopia zapasowa Bacula</header>
+
+Bacula jest zestawem program�w komputerowych, kt�re umo�liwiaj�
+administratorowi systemu zarz�dzanie, przywracanie i weryfikacj� kopii
+zapasowej danych za pomoc� sieci. Bacula mo�e by� tak�e uruchamiana na
+pojedynczym komputerze i mo�e wykonywa� kopie zapasowe na wiele r�nych
+no�nik�w jak np. tasiemki i dyski twarde.
+<p>Z technicznego punktu widzenia Bacula jest systemem kopii
+	zapasowej bazuj�cym na architekturze Klient/Serwer. Bacula jest
+	wzgl�dnie efektwna i prosta w u�yciu, a oferuje wiele zaawansowanych
+	funkcji magazynowania, kt�re umo�liwiaj� proste wyszukania i odzyskanie
+	uszkodzonych plik�w. Z powodu modularnej budowy Bacula jest skalowalna
+	od pojedynczego systemu komputerowego do system�w obejmuj�cych tysi�ce
+	komputer�w znajduj�cych si� w du�ej sieci.
+<p>
+
+	System Bacula jest podzielony na trzy osobne us�ugi, kt�re mo�na
+	teoretycznie uruchomi� na r�nych hostach. S� to:<br>
+<dl>
+	<dt>Mened�er
+	<dd>Mened�er przechowuje zadania, klient�w i wiele innych ustawie�
+		konfiguracyjnych, jest odpowiedzialny za uruchomienie zada� kopii
+		zapasowej. Ten modu� Webmina musi by� uruchomiony na systemie, kt�ry
+		ma zainstalowanego mened�era.
+	<dt>Us�uga pliku
+	<dd>Ta us�uga jest odpowiedzialna za odczyt aktualnych plik�w do
+		skopiowania. Konfiguracja Bacula mo�e zawiera� wi�cej ni� jedn� us�ug�
+		pliku, ka�da z nich uruchamiana jest na systemie, z kt�rego chcemy
+		kopiowa�.
+	<dt>Us�uga magazynu
+	<dd>Us�uga magazynu jest odpowiedzialna za zapisywanie danych na
+		no�niki takie jak tasiemki lub pliki. Zazwyczaj potrzebujesz mie�
+		tylko jedn� us�ug� magazynu uruchomion� na tym samym ho�cie co
+		mened�er, ale bardziej rozbudowane konfiguracje Bacula mog� zawiera�
+		wiele system�w z r�nymi rodzajami dysk�w, w celu podzia�u obci��enia.
+	
+</dl>
+
+Ten modu� Webmina mo�e zarz�dza� systemem, kt�ry posiada zainstalowan�
+jedn� lub wi�cej us�ug Bacula.
+<p>
+<footer>

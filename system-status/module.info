@@ -1,0 +1,16 @@
+desc_ca=Estat del Sistema
+longdesc_de=Hintergrund Systemstatus Sammlung Bibliotheken
+desc_ms_MY=Status Sistem
+version=1.730
+longdesc=Background system status collection libraries
+desc_de=System Status
+desc=System Status
+hidden=1
+category=system
+longdesc_ms_MY=Koleksi arkib status sistem latar belakang
+depends=proc cron 1.730
+desc_hu=Rendszer·llapot
+desc_de.UTF-8=System Status
+desc_ms_MY.UTF-8=Status Sistem
+desc_hu.UTF-8=Rendszer√°llapot
+desc_ca.UTF-8=Estat del Sistema

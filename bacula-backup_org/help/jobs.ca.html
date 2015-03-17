@@ -1,0 +1,43 @@
+<header>Treballs de C�pia</header>
+
+Un treball �s l'objecte configurable m�s important de Bacula, ja que
+reuneix un client, un conjunt de fitxers i altres valors per controlar
+exactament qu� es copia. Per aquest motiu, en general �s millor definir
+primer els conjunts de fitxers i els clients abans de crear un treball.
+<p>
+
+	Cada treball t� els atributs importants seg�ents:<br>
+<dl>
+	<dt>Nom del treball
+	<dd>Un nom �nic per a aquest treball.
+	<dt>Tipus de treball
+	<dd>
+		Aix� determina quina mena d'acci� portar� a terme el treball. En
+		gaireb� tots els casos ha de ser <b>C�pia</b>.
+	<dt>Nivell de c�pia
+	<dd>Determina si el treball ha de fer una c�pia parcial o completa
+		dels fitxers seleccionats.
+	<dt>Client a copiar
+	<dd>Si el sistema Bacula t� m�ltiples clients, aquesta opci�
+		determina de quin es llegeixen els fitxers d'aquest treball de c�pia.
+	
+	<dt>Conjunt de fitxers a copiar
+	<dd>El conjunt de fitxers seleccionat determina quins fitxers i
+		directoris s'inclouran a la c�pia.
+	<dt>Planificaci� de la c�pia
+	<dd>Aquesta opci� opcional determina si el treball s'executa
+		autom�ticament de forma planificada, i quan.
+	<dt>Dispositiu d'emmagatzematge dest�
+	<dd>Si el sistema Bacula est� configurat amb m�s d'un dimoni
+		d'emmagatzematge, aquest opci� determina a quin es fa la c�pia.
+</dl>
+<p>
+
+	Per simplificar el proc�s de creaci� de treballs, Bacula et deixa crear
+	treballs amb <b>definicions per defecte</b> que en realitat no
+	s'executen, sin� que especifiquen valors heretables pels treball reals.
+	Quan edites un treball, el camp <b>Tipus per defecte</b> determina si
+	�s una definici� per defecte, i hereta els valors d'algun treball per
+	defecte, o cap.
+<p>
+<footer>

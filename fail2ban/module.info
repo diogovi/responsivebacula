@@ -1,0 +1,15 @@
+desc_ca=Detector d'Intrusions Fail2Ban
+longdesc_ca=Fail2ban protegeix el teu sistema d'atacs de força bruta detectant i bloquejant les IPs d'origen
+desc_ms_MY=Fail2Ban Pengesan Pencerobohan
+longdesc_de=Fail2ban sch&#252;tzt Ihr System vor Brute-Force-Angriffen, indem Quell-IPs blockiert werden.
+version=1.730
+longdesc=Fail2ban protects your system from brute force attacks by detecting them and blocking their source IPs.
+desc_de=Fail2Ban Intrusionsdetektor
+desc=Fail2Ban Intrusion Detector
+syslog=1
+category=net
+longdesc_ms_MY=Fail2ban melindungi sistem anda dari serangan kekerasan dengan mengesan mereka dan menyekat IP sumber mereka.
+depends=init 1.730
+desc_de.UTF-8=Fail2Ban Intrusionsdetektor
+desc_ms_MY.UTF-8=Fail2Ban Pengesan Pencerobohan
+desc_ca.UTF-8=Detector d'Intrusions Fail2Ban

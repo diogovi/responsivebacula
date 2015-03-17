@@ -1,0 +1,42 @@
+<header>C�pies de Seguretat Bacula</header>
+
+Bacula �s un conjunt de programes d'ordinador que et permet (a tu, o a
+l'administrador del sistema) de gestionar c�pies de seguretat,
+restauraci� i verificaci� de les dades dels ordinadors a trav�s d'una
+xarxa d'ordinadors de diferents tipus. Bacula tamb� es pot executar en
+un sol ordinador, i pot fer c�pies sobre diferents tipus de mitjans,
+incloent-hi cintes i discs.
+<p>En termes t�cnics, �s un programa de c�pia basat en un
+	Client/Servidor de xarxa. Bacula es relativament f�cil d'utilitzar i
+	eficient, bo i oferint moltes caracter�stiques avan�ades de gesti�
+	d'emmagatzematge que faciliten la recerca i recuperaci� de fitxers
+	perduts o fets malb�. Degut al seu disseny modular, Bacula �s escalable
+	des de sistemes d'un sol ordinador petit fins a sistemes compostos de
+	centenars d'ordinadors ubicats a trav�s d'una xarxa gran.
+<p>
+
+	El sistema Bacula est� dividit en tres dimonis separats, que
+	te�ricament es poden executar en hosts diferents. Aquests s�n: <br>
+<dl>
+	<dt>Director
+	<dd>El director emmagatzema treballs, clients i la majoria
+		d'altres valors de configuraci�, i �s el responsable de l'inici dels
+		treballs de c�pia. Aquest m�dul de Webmin s'ha d'executar en el
+		sistema on hi hagi instal�lat el director.
+	<dt>Dimoni de Fitxers
+	<dd>Aquest dimoni �s el responsable de llegir els fitxers a
+		copiar. La configuraci� de Bacula pot tenir m�s d'un dimoni de
+		fitxers, cadascun executant-se en un sistema a copiar.
+	<dt>Dimoni d'Emmagatzematge
+	<dd>El dimoni d'emmagatzematge �s responsable d'escriure les dades
+		al mitja final de c�pia, com ara una cinta o un fitxer. T�picament,
+		caldr� nom�s un d'aquest dimonis (normalment executant-se en el mateix
+		host que el director), per� una configuraci� de Bacula m�s complexa
+		pot tenir m�ltiples sistemes amb unitats de cinta diferents, per
+		distribuir la c�rrega de la c�pia.
+</dl>
+
+Aquest m�dul de Webmin pot gestionar un sistema que tingui un o m�s
+dimonis de Bacula instal�lats.
+<p>
+<footer>

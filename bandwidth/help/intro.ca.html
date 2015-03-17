@@ -1,0 +1,54 @@
+<header>Monitoritzaci� d'Amplada de Banda</header>
+
+Aquest m�dul es pot utilitzar per crear informes senzills sobre l'�s de
+l'amplada de banda per port, host, protocol i hora per al tr�nsit enviat
+o reenviat a trav�s del sistema. �s �til tant per a hosts independents
+com per aquells que actuen de portal (possiblement amb NAT) d'una xarxa.
+<p>Abans de poder-lo utilitzar, el m�dul ha de configurar algunes
+	regles del tallafocs i una entrada de syslog per capturar el tr�nsit
+	enviat i rebut a trav�s del sistema. En el moment de configurar-lo, has
+	de seleccionar la interf�cie de xarxa externa del sistema sobre la qual
+	es monitoritzar� el tr�nsit. Aix� ser� habitualment la interf�cie PPP
+	utilitzada pel trucador o la connexi� ADSL, o la interf�cie Ethernet
+	connectada al m�dem de cable o encaminador.
+<p>Un cop s'ha capturat almenys un ahora de tr�nsit, el m�dul es pot
+	utilitzar per generar informes resumint el tr�nsit per una de les
+	categories seg�ents:
+<li><b>Hora</b><br> La data i hora en qu� s'han rebut les
+	dades.
+<li><b>Dia</b><br> La data en qu� s'han rebut les dades.
+<li><b>Host</b><br> El host de la xarxa interna o host
+	tallafocs que ha enviat o rebut les dades.
+<li><b>Port intern</b><br> El port del host intern o tallafocs
+	al qual s'han enviat les dades. Aquest mode �s �til per determinar
+	quant tr�nsit s'ha generat per connexions a cadascun dels servidors.
+<li><b>Port extern</b><br> El port d'algun servidor fora de la
+	xarxa al qual s'han enviat les dades. Aix� es pot utilitzar per
+	determinar a quins serveis estan accedint els usuaris de la xarxa.
+<li><b>Port</b><br> Ambd�s ports, intern i extern. �til per
+	comparar tot l�s de la xarxa per tipus de servei.
+	</ul> Tamb� pots triar limitar l'informe al host, port o protocol
+	seleccionat. El host es pot introduir per adre�a IP, nom de host o
+	adre�a de xarxa, com ara 192.168.1.0. El port es pot introduir per nom
+	o per n�mero, i coincidir� tant amb TCP com amb UDP.
+	<p>
+
+		L'informe tamb� es pot limitar al tr�nsit recollit entre hores
+		seleccionades, utilitzant els camps <b>Per al tr�nsit despr�s de</b> i
+		<b>Per al tr�nsit abans de</b>. Com que el tr�nsit es resumeix cada
+		hora, no pots limitar l'informe amb una precisi� m�s gran d'una hora.
+	
+	<p>
+
+		L'opci� <b>Nom�s els ports del servidor</b> �s �til quan s'informa pel
+		port d'entrada, de sortida, o tots. Restringeix la mostra als ports
+		utilitzats habitualment pels servidors (aquells per sota de 1024 o que
+		tenen noms), per evitar saturar l'informe amb els recomptes de ports
+		del cant� client que normalment no s�n gaire �tils.
+	<p>
+
+		L'opci� <b>Resol els noms de host</b> es pot seleccionar quan
+		s'informa per host. Provocar� que totes les adreces IP es resolguin a
+		noms de host, all� on sigui possible.
+	<p>
+	<hr>

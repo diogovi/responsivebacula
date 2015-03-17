@@ -1,0 +1,43 @@
+<header>Zadania kopii zapasowej</header>
+
+Zadanie jest najwa�niejszym obiektem w Bacula, ��czy klienta, zestaw
+plik�w i inne ustawienia pozwalaj�ce dok�adnie kontrolowa� co jest
+kopiowane. Z tego powodu najlepiej jest rozpocz�� od zdefiniowania
+zestaw�w plik�w i klient�w, a potem utworzy� zadanie.
+<p>
+
+	Ka�de zadanie posiada nast�puj�ce atrybuty:<br>
+<dl>
+	<dt>Nazw� zadania
+	<dd>Unikalna nazwa dla tego zadania.
+	<dt>Rodzaj zadania
+	<dd>
+		Okre�la jakiego rodzaju akcj� zadanie b�dzie wykonywa�. W wi�kszo�ci
+		przypadk�w powinno by� ustawione na <strong>Kopia zapasowa</strong>.
+	<dt>Rodzaj kopii
+	<dd>Okre�la czy zadanie wykona pe�n� czy cz�ciow� kopi� zapasow�
+		wybranych plik�w.
+	<dt>Klient do skopiowania
+	<dd>Je�li tw�j system Bacula posiada wielu klient�w, opcja ta
+		okre�la, kt�ry z plik�w b�dzie odczytywany przez zadanie kopii
+		zapasowej.
+	<dt>Zestaw plik�w do skopiowania
+	<dd>Wybrany zestaw plik�w okre�la, kt�re pliki i katalogi zawarte
+		s� w kopii zapasowej.
+	<dt>Harmonogram kopii zapasowej
+	<dd>Opcja okre�la, czy zadanie b�dzie automatycznie wykonywane w
+		wyznaczonym czasie.
+	<dt>Urz�dzenie magazynuj�ce
+	<dd>Je�li konfiguracja Bacula jest ustawiona na wi�cej ni� jedn�
+		us�ug� magazynu, opcja ta okre�la, do kt�rej us�ugi kopia zapasowa
+		b�dzie zapisywana.
+</dl>
+<p>
+
+	Aby upro�ci� proces tworzenia zadania, Bacula umo�liwia utworzenia <strong>Domy�lnej
+		definicji</strong> zada�, kt�re nie s� uruchomione, ale okre�laj� ustawienia
+	dziedziczone przez rzeczywiste zadania. Podczas edytowania zadania,
+	pole <strong>Domy�lny rodzaj</strong> okre�la czy zadanie jest domy�ln�
+	definicj�, czy dziedziczy ustawienia z innej domy�lnej definicji.
+<p>
+<footer>

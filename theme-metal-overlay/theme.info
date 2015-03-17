@@ -1,0 +1,6 @@
+desc=Metal Theme Overlay
+overlay=1
+webmin=1
+usermin=1
+overlays=theme-metal
+version=2.10
